@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="myStyleSheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 id="header">JavaScript Demo</h1>
+    <input id="inputfelt" type="text">
+    <div id="outputfelt" class="output">Noget tekst!</div>
+    <img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png" alt="Exploits of a Mom">
+    <button onClick="btnClick()">Do not press this button!</button>
+</body>
+<script>
+    function btnClick()
+    {
+        document.getElementById("header").innerText = "JavaScript er Cool!";
+        document.getElementById("outputfelt").innerText = document.getElementById("inputfelt").value;
+    }
+</script>
+</html>
